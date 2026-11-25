@@ -1,0 +1,9 @@
+{
+  "name": "lich-va-file-san-xuat",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Lịch làm việc nhân sự và quản lý file sản xuất, có đăng nhập và phân quyền admin / nhân viên",
+  "main": "server.js",
+  "scripts": { "start": "node --disable-warning=ExperimentalWarning server.js" },
+  "engines": { "node": ">=22.13" }
+}
