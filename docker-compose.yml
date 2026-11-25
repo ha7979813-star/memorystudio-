@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "3000:3000"          # nếu dùng Caddy/nginx phía trước, đổi thành "127.0.0.1:3000:3000"
+    env_file: .env
+    volumes:
+      - ./data:/data         # chứa app.db và thư mục uploads: nhớ sao lưu thư mục này
